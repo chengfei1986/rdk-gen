@@ -181,8 +181,8 @@ function make_ubuntu_image()
     exit 0
 }
 
-#${HR_LOCAL_DIR}/download_samplefs.sh ${ROOTFS_ORIG_DIR}
-#${HR_LOCAL_DIR}/download_deb_pkgs.sh ${HR_LOCAL_DIR}/deb_packages
+${HR_LOCAL_DIR}/download_samplefs.sh ${ROOTFS_ORIG_DIR}
+${HR_LOCAL_DIR}/download_deb_pkgs.sh ${HR_LOCAL_DIR}/deb_packages
 
 rm ${HR_LOCAL_DIR}/deb_packages/*.deb
 cp ${IMAGE_DEPLOY_DIR}/deb_pkgs/*.deb ${HR_LOCAL_DIR}/deb_packages/
